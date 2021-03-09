@@ -1,3 +1,5 @@
+package shortest_path;
+
 import java.util.*;
 
 class Node {
@@ -48,7 +50,7 @@ public class Dijkstra9_1 {
     public static void dijkstra(int start) {
         // 시작 노드에 대해서 초기화
         d[start] = 0;
-        visites[start] = true;
+        visited[start] = true;
         for (int j = 0; j < graph.get(start).size(); j++) { // 시작 노드에 저장된(연결된) 노드들을 돈다.
             // 해당 index의 값을 거리 데이터로 초기화한다.
             d[graph.get(start).get(j).getIndex()] = graph.get(start).get(j).getDistance();
