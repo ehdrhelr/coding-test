@@ -1,4 +1,4 @@
-package chapter11_practice;
+package chapter11_greedy;
 
 import java.util.*;
 
